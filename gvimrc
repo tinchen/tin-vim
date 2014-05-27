@@ -4,7 +4,7 @@ colorscheme ir_black
 set linespace=2
 
 if has("gui_macvim")
-  set guifont=Monaco:h15
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 elseif has("gui_gtk")
   set guifont=Monospace\ 12
 else
@@ -34,7 +34,7 @@ if has("gui_gtk")
   " imap <DOWN> <ESC>gj<RIGHT>i
 
   " select ALL
-  map <C-A> ggVG  
+  map <C-A> ggVG
 endif
 
 if has("gui_macvim")
