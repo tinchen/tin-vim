@@ -40,6 +40,13 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 
+set term=xterm-256color
+set t_Co=256
+try
+  colorscheme sorcerer
+catch
+endtry
+
 set omnifunc=syntaxcomplete#Complete
 set modeline
 set mouse=a
