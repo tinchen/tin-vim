@@ -3,7 +3,7 @@ set winaltkeys=no
 
 nmap <silent> <F2> :NERDTreeMirrorToggle<CR>
 nmap <F3> :CtrlP<CR>
-nmap <F4> :BufExplorer<CR>
+nmap <F4> :BufExplorerHorizontalSplit<CR>
 " nmap <F4> :TMToggle<CR>
 
 " next and prev tab
