@@ -28,7 +28,7 @@ vmap <S-TAB> <gv
 
 " quick open vimrc in a new tab
 nmap <leader>v :tabe $MYVIMRC<CR>
-map <leader>h :botright :split ~/.vim/tips.txt<CR>:set syntax=help<CR>
+map <leader>h :botright :split ~/.vim/docs/tips.txt<CR>:set syntax=help<CR>
 
 " 將 gf 定義為另外開新分頁讀入檔案: http://goo.gl/FuIsA9
 nmap gf :tabedit <cfile><CR>
@@ -36,17 +36,19 @@ nmap gf :tabedit <cfile><CR>
 " Quickfix Window toggle
 nmap <leader>q :QFix<CR>
 
-"nmap : ;
-
 " change supertab <tab> maping to <c-tab>
-let g:SuperTabMappingForward    = '<c-tab>'
-let g:SuperTabMappingTabLiteral = '<tab>'
+" let g:SuperTabMappingForward    = '<c-tab>'
+" let g:SuperTabMappingTabLiteral = '<tab>'
+let g:SuperTabDefaultCompletionType = 'context'
 
 " Define the keys used to trigger UltiSnips actions
 " Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger       = '<tab>'
 let g:UltiSnipsJumpForwardTrigger  = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+" redefine emmet trigger key
+let g:user_emmet_expandabbr_key = '<C-e>'
 
 " mapping or command for quick directory change
 nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
